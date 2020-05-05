@@ -1,1 +1,0 @@
-/anaconda3/envs/udacity/bin/postgres "-D" "mylocal_db"
