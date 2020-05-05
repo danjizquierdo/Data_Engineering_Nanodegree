@@ -1,0 +1,30 @@
+2020-05-04 21:09:30.931 EDT [74520] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin18.7.0, compiled by clang version 9.0.1 , 64-bit
+2020-05-04 21:09:30.934 EDT [74520] LOG:  listening on IPv6 address "::1", port 5432
+2020-05-04 21:09:30.934 EDT [74520] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-05-04 21:09:30.934 EDT [74520] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-05-04 21:09:30.947 EDT [74521] LOG:  database system was shut down at 2020-05-04 21:08:57 EDT
+2020-05-04 21:09:30.953 EDT [74520] LOG:  database system is ready to accept connections
+2020-05-04 21:17:49.732 EDT [74938] FATAL:  role "student" does not exist
+2020-05-04 21:21:23.578 EDT [74963] ERROR:  role "postgres" does not exist
+2020-05-04 21:21:23.578 EDT [74963] STATEMENT:  ALTER USER postgres PASSWORD 'md5d9fdd7a1ef3f010248e2eb55eff3f85b'
+2020-05-04 21:24:36.374 EDT [75018] FATAL:  database "demo0" does not exist
+2020-05-04 21:26:14.021 EDT [75035] FATAL:  database "demo0" does not exist
+2020-05-04 21:26:32.610 EDT [75039] FATAL:  database "demo0" does not exist
+2020-05-04 21:26:44.398 EDT [74963] ERROR:  syntax error at or near "-" at character 37
+2020-05-04 21:26:44.398 EDT [74963] STATEMENT:  CREATE DATABASE demo0
+	psql postgres -U mundaneuser
+	GRANT ALL PRIVILEGES ON DATABASE demo0 TO mundaneuser
+	CREATE DATABASE demo0
+	GRANT ALL PRIVILEGES ON DATABASE demo0 TO mundaneuser
+	CREATE DATABASE demo0;
+2020-05-04 21:32:01.765 EDT [75120] FATAL:  database "dizquierdo" does not exist
+2020-05-04 21:32:21.224 EDT [75128] FATAL:  database "studentdb" does not exist
+2020-05-04 21:33:01.984 EDT [75133] ERROR:  relation "test" does not exist at character 15
+2020-05-04 21:33:01.984 EDT [75133] STATEMENT:  select * from test
+2020-05-04 21:33:03.698 EDT [75133] ERROR:  current transaction is aborted, commands ignored until end of transaction block
+2020-05-04 21:33:03.698 EDT [75133] STATEMENT:  CREATE TABLE test (col1 int, col2 int, col3 int);
+2020-05-04 21:33:05.859 EDT [75137] FATAL:  role "student" does not exist
+2020-05-04 21:33:20.055 EDT [75138] ERROR:  relation "test" does not exist at character 15
+2020-05-04 21:33:20.055 EDT [75138] STATEMENT:  select * from test
+2020-05-04 21:36:11.611 EDT [75224] ERROR:  relation "udacity.music_library" does not exist at character 15
+2020-05-04 21:36:11.611 EDT [75224] STATEMENT:  select * from udacity.music_library
